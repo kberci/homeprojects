@@ -1,2 +1,2 @@
-# homeprojects
-Smaller projects done for some personal project.
+# Home projects
+Smaller coding projects done for personal usage.
