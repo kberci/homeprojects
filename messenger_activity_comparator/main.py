@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 SETTINGS = {
-    'full_name1': 'John Smith',
-    'full_name2': 'Isabel Smith',
+    'sender_name1': 'John Smith',
+    'sender_name2': 'Isabel Smith',
     'nick_name1': 'John',
     'nick_name2': 'Isabel',
 }
@@ -27,7 +27,7 @@ def initialize_dict(current_date):
 
 
 def update_values(msg, processed_result):
-    sender = SETTINGS['nick_name1'] if SETTINGS['full_name1'] in msg[
+    sender = SETTINGS['nick_name1'] if SETTINGS['sender_name1'] in msg[
         'sender_name'] else SETTINGS['nick_name2']
     processed_result[sender]['questions'] += msg['content'].count('?')
     processed_result[sender]['msg_len'] += len(msg['content']) / 10
